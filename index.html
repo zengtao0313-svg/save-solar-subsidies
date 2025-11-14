@@ -5,94 +5,159 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save Solar Subsidies in Florida</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Save Solar Subsidies in Florida</h1>
-    <img src="images/solar_panels_header.jpg" alt="Solar panels in Florida" class="header-image">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Save Solar FL</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#petition">Petition</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="home" class="hero">
+    <div class="hero-overlay">
+      <h1>Save Solar Subsidies in Florida</h1>
+      <p>Help small businesses and low-income residents access affordable solar energy</p>
+      <a href="#petition" class="cta-button">Sign the Petition</a>
+    </div>
   </header>
 
   <main>
-    <p>
-      Florida is ending subsidies for solar panels that help small businesses and low-income residents.
-      These programs are essential for promoting clean energy, lowering energy bills, and creating local green jobs.
-      We urge the government to extend these programs to ensure solar energy is accessible to all Floridians.
-    </p>
-
-    <a href="petition.html" class="cta-button">Sign the Petition</a>
-
-    <section>
+    <!-- WHY IT MATTERS -->
+    <section class="content-section">
       <h2>Why It Matters</h2>
       <img src="images/clean_energy.jpg" alt="Clean Energy" class="inline-image">
-
       <ul>
-        <li>Reduce carbon emissions and move Florida toward a cleaner, more resilient energy future</li>
-        <li>Lower energy bills for small businesses, nonprofits, and working families</li>
-        <li>Help low-income communities access renewable energy that was previously unaffordable</li>
-        <li>Protect residents from rising utility bills caused by fossil fuel price volatility</li>
-        <li>Create high-paying local clean-energy jobs across installation, maintenance, and manufacturing</li>
-        <li>Support energy independence during hurricanes and outages with rooftop solar + battery storage</li>
-        <li>Prevent Florida from falling behind other states accelerating renewable energy adoption</li>
-        <li>Ensure federal clean energy programs actually reach Florida families instead of going unused</li>
+        <li>Reduce carbon emissions and move Florida toward a cleaner, resilient energy future</li>
+        <li>Lower energy bills for small businesses, nonprofits, and families</li>
+        <li>Help low-income communities access renewable energy</li>
+        <li>Protect residents from rising utility bills</li>
+        <li>Create local clean-energy jobs</li>
+        <li>Increase hurricane resilience with solar + battery storage</li>
+        <li>Keep Florida competitive with other states</li>
+        <li>Ensure federal energy programs reach families</li>
       </ul>
     </section>
 
-    <section>
+    <!-- WHAT'S HAPPENING -->
+    <section class="content-section">
       <h2>What’s Happening in Florida</h2>
-
-      <img src="images/florida_power_lines.jpg" alt="Florida energy policy" class="inline-image">
-
-      <p>
-        Florida's solar future is at risk. Several recent policy decisions at both the state and federal levels 
-        have reduced or eliminated financial incentives that helped homeowners, condo residents, and small 
-        businesses go solar. Most notably:
-      </p>
-
+      <img src="images/florida_power_lines.jpg" alt="Florida Energy Policy" class="inline-image">
       <ul>
-        <li>The cancellation of a <strong>$156 million federal Solar for All grant</strong>, which was intended to help low-income Floridians install solar panels</li>
-        <li>Proposals to end or weaken federal tax credits that made home solar affordable nationwide</li>
-        <li>Local-level pressure to reduce net-metering benefits, making rooftop solar less economical</li>
-        <li>The expiration of the 30% federal solar tax credit in 2025, unless Congress extends it</li>
-        <li>The lack of state-level incentives compared to other states, leaving Florida residents with fewer options</li>
+        <li><strong>$156 million Solar for All grant canceled</strong></li>
+        <li>Federal tax credits may expire in 2025</li>
+        <li>Net-metering reductions threaten rooftop solar economics</li>
+        <li>Florida has fewer state incentives compared to other states</li>
+        <li>Multifamily housing & small businesses face higher upfront costs</li>
       </ul>
-
-      <p>
-        Without action, these changes will disproportionately harm low-income households, renters, condo owners, 
-        and small businesses who rely on subsidies to access renewable energy. Solar should not be only for wealthy 
-        households — it must remain accessible to everyone.
-      </p>
     </section>
 
-    <section>
+    <!-- WHO IS MOST AFFECTED -->
+    <section class="content-section">
       <h2>Who Is Most Affected?</h2>
       <img src="images/community_solar.jpg" alt="Community Solar" class="inline-image">
-
       <ul>
-        <li><strong>Low-income families</strong> who qualified for the canceled Solar for All program</li>
-        <li><strong>Renters and condo owners</strong> living in buildings with shared roofs</li>
-        <li><strong>Small businesses</strong> trying to reduce overhead and stay competitive</li>
-        <li><strong>Rural communities</strong> that face higher energy costs</li>
-        <li><strong>Schools and community centers</strong> that were planning to reduce electricity budgets</li>
+        <li>Low-income families</li>
+        <li>Renters and condo owners</li>
+        <li>Small businesses</li>
+        <li>Rural communities</li>
+        <li>Schools and community centers</li>
       </ul>
     </section>
 
-    <section>
+    <!-- RESOURCES -->
+    <section id="resources" class="content-section">
       <h2>Resources</h2>
-      <img src="images/solar_resources.jpg" alt="Solar Resources" class="inline-image">
+      <div class="card-container">
+        <div class="card">
+          <img src="images/solar_resources.jpg" alt="Solar Resources">
+          <h3><a href="https://www.floridaenergy.gov/">Florida Energy Office</a></h3>
+        </div>
+        <div class="card">
+          <img src="images/solar_resources.jpg" alt="Solar News">
+          <h3><a href="https://www.solarpowerworldonline.com/">Solar Industry News</a></h3>
+        </div>
+        <div class="card">
+          <img src="images/solar_resources.jpg" alt="Solar Subsidy">
+          <h3><a href="https://southsidedaily.com/florida-low-income-solar-subsidy/">Low-Income Residents Lost Solar Subsidy</a></h3>
+        </div>
+        <div class="card">
+          <img src="images/solar_resources.jpg" alt="Policy">
+          <h3><a href="https://www.tampabay.com/news/business/2025/08/08/trump-florida-solar-panel-electricity-bill-grant-cancel/">Trump Admin Cancels $156M Grant</a></h3>
+        </div>
+      </div>
+    </section>
 
-      <ul>
-        <li><a href="https://www.floridaenergy.gov/">Florida Energy Office</a></li>
-        <li><a href="https://www.solarpowerworldonline.com/">Solar Industry News</a></li>
-        <li><a href="https://www.utilitydive.com/news/florida-solar-for-all-grant-revoked/715962/">Solar for All Grant Revoked – UtilityDive</a></li>
-        <li><a href="https://news.bloomberglaw.com/environment-and-energy/biden-reneges-on-grants-aimed-at-helping-poor-access-solar">Federal Solar Funding Reversal – Bloomberg Law</a></li>
-        <li><a href="https://www.reuters.com/world/us/us-revokes-floridas-156-million-solar-energy-grant-bankruptcy-raise-questions-2024-11-06/">Reuters: Florida $156M Solar Grant Revoked</a></li>
-      </ul>
+    <!-- PETITION FORM -->
+    <section id="petition" class="content-section">
+      <h2>Sign the Petition</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4">I support extending solar subsidies for small businesses and low-income residents in Florida.</textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:info@savesolarfl.org">info@savesolarfl.org</a></p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Save Solar Subsidies Florida</p>
   </footer>
+
+  <script>
+    // Mobile Burger Menu
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+
+    // Scroll animations
+    const sections = document.querySelectorAll('.content-section');
+    window.addEventListener('scroll', () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom){
+          section.classList.add('show');
+        } else {
+          section.classList.remove('show');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
