@@ -3,32 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign the Petition</title>
+  <title>Sign the Petition - Save Solar Florida</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Petition: Extend Solar Subsidies in Florida</h1>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Save Solar FL</div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="petition.html#petition">Petition</a></li>
+      <li><a href="index.html#resources">Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Sign the Petition</h1>
+      <p>Help extend solar subsidies for small businesses and low-income residents in Florida</p>
+    </div>
   </header>
 
   <main>
-    <p>
-      Florida is ending subsidies for solar panels. Sign this petition to urge the government
-      to extend these programs for small businesses and low-income residents.
-    </p>
+    <section id="petition" class="content-section">
+      <h2>Petition Form</h2>
+      <p>Florida is ending subsidies for solar panels. Sign this petition to urge the government to extend these programs for small businesses and low-income residents.</p>
 
-    <!-- Google Form Embed -->
-    <div class="form-container">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwYg7yN7oQBQlWCUSWH7J7B7WU34LZJ2KTjxPP72aHZJF_eA/viewform?embedded=true"
-              width="100%" height="942" frameborder="0" marginheight="0" marginwidth="0">
-        Loading…
-      </iframe>
-    </div>
-
+      <!-- Google Form Embed -->
+      <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwYg7yN7oQBQlWCUSWH7J7B7WU34LZJ2KTjxPP72aHZJF_eA/viewform?embedded=true"
+                width="100%" height="942" frameborder="0" marginheight="0" marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Save Solar Subsidies Florida</p>
   </footer>
+
+  <script>
+    // Mobile Burger Menu
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
 </body>
 </html>
