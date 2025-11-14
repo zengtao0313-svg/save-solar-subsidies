@@ -30,7 +30,7 @@
     <div class="hero-overlay">
       <h1>Save Solar Subsidies in Florida</h1>
       <p>Help small businesses and low-income residents access affordable solar energy</p>
-      <a href="#petition" class="cta-button">Sign the Petition</a>
+      <a href="petition.html" class="cta-button">Sign the Petition</a>
     </div>
   </header>
 
@@ -100,64 +100,8 @@
       </div>
     </section>
 
-    <!-- PETITION FORM -->
+    <!-- PETITION CTA -->
     <section id="petition" class="content-section">
-      <h2>Sign the Petition</h2>
-      <form>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4">I support extending solar subsidies for small businesses and low-income residents in Florida.</textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="content-section">
-      <h2>Contact</h2>
-      <p>Email us at <a href="mailto:info@savesolarfl.org">info@savesolarfl.org</a></p>
-      <p>Follow us on social media:</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Save Solar Subsidies Florida</p>
-  </footer>
-
-  <script>
-    // Mobile Burger Menu
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('nav-active');
-      burger.classList.toggle('toggle');
-    });
-
-    // Scroll animations
-    const sections = document.querySelectorAll('.content-section');
-    window.addEventListener('scroll', () => {
-      const triggerBottom = window.innerHeight * 0.85;
-      sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
-        if(sectionTop < triggerBottom){
-          section.classList.add('show');
-        } else {
-          section.classList.remove('show');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+      <h2>Support the Petition</h2>
+      <p>Sign the petition to extend solar subsidies for small businesses and low-income residents.</p>
+      <a href="petition.html" cla
