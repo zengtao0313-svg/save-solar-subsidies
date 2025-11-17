@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign the Petition - Save Solar Florida</title>
+  <title>Sign the Petition</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">Save Solar FL</div>
+    <div class="logo">Solar Future</div>
     <ul class="nav-links">
-      <li><a href="index.html#home">Home</a></li>
-      <li><a href="petition.html#petition">Petition</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">Why It Matters</a></li>
       <li><a href="index.html#resources">Resources</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="petition.html">Sign Petition</a></li>
     </ul>
     <div class="burger">
       <div></div>
@@ -25,43 +23,40 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1>Sign the Petition</h1>
-      <p>Help extend solar subsidies for small businesses and low-income residents in Florida</p>
-    </div>
-  </header>
+  <section class="content-section show">
+    <h2>Sign the Petition</h2>
+    <p>Help protect Florida’s clean energy future by signing the official petition below.</p>
 
-  <main>
-    <section id="petition" class="content-section">
-      <h2>Petition Form</h2>
-      <p>Florida is ending subsidies for solar panels. Sign this petition to urge the government to extend these programs for small businesses and low-income residents.</p>
+    <!-- ============================= -->
+    <!-- ⭐ EMBEDDED GOOGLE FORM ⭐     -->
+    <!-- Replace the link with yours   -->
+    <!-- ============================= -->
+    <iframe 
+      src="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/viewform?embedded=true" 
+      width="100%" 
+      height="900" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
+    <!-- ============================= -->
 
-      <!-- Google Form Embed -->
-      <div class="form-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwYg7yN7oQBQlWCUSWH7J7B7WU34LZJ2KTjxPP72aHZJF_eA/viewform?embedded=true"
-                width="100%" height="942" frameborder="0" marginheight="0" marginwidth="0">
-          Loading…
-        </iframe>
-      </div>
-    </section>
-  </main>
+  </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Save Solar Subsidies Florida</p>
+    <p>&copy; 2025 Solar Future | All Rights Reserved</p>
   </footer>
 
   <script>
-    // Mobile Burger Menu
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
+    // Mobile menu
+    const burger = document.querySelector(".burger");
+    const navLinks = document.querySelector(".nav-links");
 
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('nav-active');
-      burger.classList.toggle('toggle');
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
     });
   </script>
+
 </body>
 </html>
