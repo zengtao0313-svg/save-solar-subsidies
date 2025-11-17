@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Save Solar Subsidies in Florida</title>
+  <title>Solar Subsidy Awareness</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">Save Solar FL</div>
+    <div class="logo">Solar Future</div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#petition">Petition</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">Why It Matters</a></li>
       <li><a href="#resources">Resources</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="petition.html">Sign Petition</a></li>
     </ul>
     <div class="burger">
       <div></div>
@@ -26,82 +25,69 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <header id="home" class="hero">
+  <section class="hero">
     <div class="hero-overlay">
-      <h1>Save Solar Subsidies in Florida</h1>
-      <p>Help small businesses and low-income residents access affordable solar energy</p>
+      <h1>Protect Florida’s Solar Future</h1>
+      <p>Support the extension of solar subsidies to keep clean energy affordable for everyone.</p>
       <a href="petition.html" class="cta-button">Sign the Petition</a>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- WHY IT MATTERS -->
-    <section class="content-section">
-      <h2>Why It Matters</h2>
-      <img src="images/clean_energy.jpg" alt="Clean Energy" class="inline-image">
-      <ul>
-        <li>Reduce carbon emissions and move Florida toward a cleaner, resilient energy future</li>
-        <li>Lower energy bills for small businesses, nonprofits, and families</li>
-        <li>Help low-income communities access renewable energy</li>
-        <li>Protect residents from rising utility bills</li>
-        <li>Create local clean-energy jobs</li>
-        <li>Increase hurricane resilience with solar + battery storage</li>
-        <li>Keep Florida competitive with other states</li>
-        <li>Ensure federal energy programs reach families</li>
-      </ul>
-    </section>
+  <!-- ABOUT SECTION -->
+  <section class="content-section" id="about">
+    <h2>Why Solar Subsidies Matter</h2>
+    <p>
+      Solar subsidies help homeowners reduce upfront costs and accelerate clean energy adoption in Florida.
+      Removing or reducing these incentives will slow progress and increase long-term energy costs for families.
+    </p>
+    <img src="images/solar_benefits.jpg" class="inline-image" alt="Solar panels on a home">
+  </section>
 
-    <!-- WHAT'S HAPPENING -->
-    <section class="content-section">
-      <h2>What’s Happening in Florida</h2>
-      <img src="images/florida_power_lines.jpg" alt="Florida Energy Policy" class="inline-image">
-      <ul>
-        <li><strong>$156 million Solar for All grant canceled</strong></li>
-        <li>Federal tax credits may expire in 2025</li>
-        <li>Net-metering reductions threaten rooftop solar economics</li>
-        <li>Florida has fewer state incentives compared to other states</li>
-        <li>Multifamily housing & small businesses face higher upfront costs</li>
-      </ul>
-    </section>
-
-    <!-- WHO IS MOST AFFECTED -->
-    <section class="content-section">
-      <h2>Who Is Most Affected?</h2>
-      <img src="images/community_solar.jpg" alt="Community Solar" class="inline-image">
-      <ul>
-        <li>Low-income families</li>
-        <li>Renters and condo owners</li>
-        <li>Small businesses</li>
-        <li>Rural communities</li>
-        <li>Schools and community centers</li>
-      </ul>
-    </section>
-
-    <!-- RESOURCES -->
-    <section id="resources" class="content-section">
-      <h2>Resources</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="images/solar_resources.jpg" alt="Solar Resources">
-          <h3><a href="https://www.floridaenergy.gov/">Florida Energy Office</a></h3>
-        </div>
-        <div class="card">
-          <img src="images/solar_resources.jpg" alt="Solar News">
-          <h3><a href="https://www.solarpowerworldonline.com/">Solar Industry News</a></h3>
-        </div>
-        <div class="card">
-          <img src="images/solar_resources.jpg" alt="Solar Subsidy">
-          <h3><a href="https://southsidedaily.com/florida-low-income-solar-subsidy/">Low-Income Residents Lost Solar Subsidy</a></h3>
-        </div>
-        <div class="card">
-          <img src="images/solar_resources.jpg" alt="Policy">
-          <h3><a href="https://www.tampabay.com/news/business/2025/08/08/trump-florida-solar-panel-electricity-bill-grant-cancel/">Trump Admin Cancels $156M Grant</a></h3>
-        </div>
+  <!-- RESOURCES SECTION -->
+  <section class="content-section" id="resources">
+    <h2>Learn More</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/resource1.jpg" alt="Clean energy">
+        <a href="#">Florida Clean Energy Report</a>
       </div>
-    </section>
+      <div class="card">
+        <img src="images/resource2.jpg" alt="Solar savings">
+        <a href="#">Solar Savings Guide</a>
+      </div>
+      <div class="card">
+        <img src="images/resource3.jpg" alt="Policy info">
+        <a href="#">State Policy Overview</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- PETITION CTA -->
-    <section id="petition" class="content-section">
-      <h2>Support the Petition</h2>
-      <p>Sign the petition to extend solar subsidies for small businesses and low-income residents.</p>
-      <a href="petition.html" cla
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Solar Future | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const burger = document.querySelector(".burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
+    });
+
+    // Scroll animation
+    const sections = document.querySelectorAll(".content-section");
+    const reveal = () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add("show");
+      });
+    };
+    window.addEventListener("scroll", reveal);
+    reveal();
+  </script>
+
+</body>
+</html>
